@@ -13,19 +13,25 @@ const PropertyPage = async ({ params }) => {
     <>
       <PropertyHeaderImage image={property.images[0]} />
 
+      {/* Go Back Button */}
       <section>
         <div className="container m-auto py-6 px-6">
           <Link
             href="/properties"
             className="text-blue-500 hover:text-blue-600 flex items-center"
           >
-            <FaArrowLeft className="mr-2" /> Back to Properties
+            <FaArrowLeft className="mr-2" /> Back to see more properties
           </Link>
         </div>
       </section>
 
-      <section>
-        <p>{property.name}</p>
+      {/* Property Info */}
+      <section class="bg-blue-50">
+        <div class="container m-auto py-10 px-6">
+          <div class="grid grid-cols-1 md:grid-cols-70/30 w-full gap-6">
+            {/* TODO:Property Info */}
+          </div>
+        </div>
       </section>
     </>
   );
